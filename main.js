@@ -77,7 +77,7 @@ $(document).ready(function () {
                 type: "POST",
                 contentType: false,
                 processData: false,
-                success: function (data) {
+                success: function async (data) {
 
                     var json = await JSON.parse(data);
                     
