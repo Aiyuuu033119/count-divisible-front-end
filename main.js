@@ -75,7 +75,7 @@ $(document).ready(function () {
             data.append('p', p);
 
             $.ajax({
-                url: "https://count-divisible.herokuapp.com/",
+                url: "https://count-divisible.herokuapp.com",
                 data: data,
                 type: "POST",
                 contentType: false,
