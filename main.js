@@ -77,9 +77,9 @@ $(document).ready(function () {
                 type: "POST",
                 contentType: false,
                 processData: false,
-                success: function async (data) {
+                success: function (data) {
 
-                    var json = await JSON.parse(data);
+                    var json = JSON.parse(data);
                     
                     $('.result').text(Math.round(json));
                 }
