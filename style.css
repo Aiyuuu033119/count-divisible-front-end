@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #00DBDE, #FC00FF);
+}
+
+.container > .card {
+    box-shadow: 0px 5px 16px -5px rgba(0,0,0,0.34);
+    -webkit-box-shadow: 0px 5px 16px -5px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 5px 16px -5px rgba(0,0,0,0.34);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 400px;
+    background-color: white;
+}
+
+.card > .first-num,
+.card > .second-num{
+    padding-bottom: 1rem;
+}
+
+.first-num > input,
+.second-num > input{
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid rgb(161, 161, 161);
+    width: 100%;
+    margin-top: 5px;
+    /* padding: 0 5px; */
+    text-align: center;
+
+}
+
+.first-num > input:focus,
+.first-num > input:active,
+.second-num > input:focus,
+.second-num > input:active{
+    border: 1px solid rgb(161, 161, 161);
+    outline-width: 0;
+}
+
+.card > button{
+    height: 40px;
+    border-radius: 3px;
+    margin-top: 5px;
+    background-color: rgb(79, 36, 180);
+    color: white;
+    outline-width: 0;
+    border:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card > button:active,
+.card > button:focus{
+    border: 1px solid white;
+    outline-width: 0;
+}
+
+.card > h1 {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding-bottom: 3px;
+}
+
+h3{
+    text-align: center;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #4f24b4;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 25px;
+}
