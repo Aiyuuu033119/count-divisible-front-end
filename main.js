@@ -70,12 +70,9 @@ $(document).ready(function () {
         }
 
         if (hasError == false) {
-            data.append('x', x);
-            data.append('y', y);
-            data.append('p', p);
-
+            
             $.ajax({
-                url: "https://count-divisible.herokuapp.com",
+                url: "https://count-divisible.herokuapp.com/index.php/"+x+'/'+y+'/'+p,
                 data: data,
                 type: "POST",
                 contentType: false,
