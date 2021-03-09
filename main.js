@@ -79,9 +79,9 @@ $(document).ready(function () {
                 processData: false,
                 success: function (data) {
 
-                    var json = JSON.parse(data);
+                    var json = await JSON.parse(data);
                     
-                    $('.result').text(json);
+                    $('.result').text(Math.round(json));
                 }
             });
         }
