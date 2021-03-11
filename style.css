@@ -20,7 +20,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 350px;
     width: 400px;
     background-color: white;
 }
@@ -87,4 +87,5 @@ h3{
     margin-top: 15px;
     border-radius: 5px;
     font-size: 25px;
+    height: 55px;
 }

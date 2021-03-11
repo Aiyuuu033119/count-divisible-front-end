@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    
     $('.getResult').on('click', function (e) {
         e.preventDefault();
 
@@ -70,7 +71,8 @@ $(document).ready(function () {
         }
 
         if (hasError == false) {
-            
+            $('.result').text('');
+            $('.loader-container').html('<div class="loader11"></div>');
             $.ajax({
                 url: "https://count-divisible.herokuapp.com/index.php?x="+x+"&y="+y+"&p="+p,
                 data: data,
@@ -80,7 +82,7 @@ $(document).ready(function () {
                 success: function (data) {
 
                     var json = JSON.parse(data);
-                    
+                    $('.loader-container').html('');
                     $('.result').text(Math.round(json));
                 }
             });
